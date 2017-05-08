@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>切换选项卡功能实现JSModule</title>
+        <link rel="stylesheet" href="css/switchTab.css" />
+    </head>
+    <body>
+        <div class="nav-tab">
+            <ul class="main-tab" id="nav-tab">
+                <li class="active" index="0">
+                    <a href="#none"><p>星期一</p><p>11-07</p></a>
+                </li>
+                <li index="1"><a href="#none"><p>星期二</p><p>11-08</p></a></li>
+                <li index="2"><a href="#none"><p>星期三</p><p>11-09</p></a></li>
+                <li index="3"><a href="#none"><p>星期四</p><p>11-10</p></a></li>
+                <li index="4"><a href="#none"><p>星期五</p><p>11-11</p></a></li>
+                <li index="5"><a href="#none"><p>星期六</p><p>11-12</p></a></li>
+                <li index="6"><a href="#none"><p>星期日</p><p>11-13</p></a></a></li>
+            </ul>
+        </div>
+        <div class="tab-content">
+            <div class="table-div" style="display: block;" tab-index="0">
+                <table cellpadding="0" cellspacing="0" border="0" class="table">
+                    <colgroup>
+                          <col align="left"  width="40%"/>
+                          <col align="left"  width="30%"/>
+                          <col align="right" width="30%"/>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <td>播出频道</td>
+                            <td>时间</td>
+                            <td>节目</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>安徽卫视</td>
+                            <td>2016/11/07</td>
+                            <td>天气预报</td>
+                        </tr>
+                        <tr>
+                            <td>CCTV</td>
+                            <td>2016/11/07</td>
+                            <td>天气预报</td>
+                        </tr>
+                        <tr>
+                            <td>广东卫视</td>
+                            <td>2016/11/07</td>
+                            <td>天气预报</td>
+                        </tr>
+                    </tbody>
+                </table> 
+            </div>
+            
+            <div class="table-div" style="display: none;" tab-index="1">
+                <table cellpadding="0" cellspacing="0" border="0" class="table">
+                    <thead>
+                        <tr>
+                            <td>播出频道</td>
+                            <td>时间</td>
+                            <td>节目</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>安徽卫视</td>
+                            <td>2016/11/08</td>
+                            <td>天气预报</td>
+                        </tr>
+                        <tr>
+                            <td>CCTV</td>
+                            <td>2016/11/08</td>
+                            <td>天气预报</td>
+                        </tr>
+                    </tbody>
+                </table> 
+            </div>
+            <div class="table-div" style="display: none;" tab-index="2">
+                <table cellpadding="0" cellspacing="0" border="0" class="table">
+                    <thead>
+                        <tr>
+                            <td>播出频道</td>
+                            <td>时间</td>
+                            <td>节目</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>安徽卫视</td>
+                            <td>2016/11/09</td>
+                            <td>天气预报</td>
+                        </tr>
+                        <tr>
+                            <td>CCTV</td>
+                            <td>2016/11/09</td>
+                            <td>天气预报</td>
+                        </tr>
+                    </tbody>
+                </table> 
+            </div>
+            <div class="table-div" style="display: none;" tab-index="3">
+                <table cellpadding="0" cellspacing="0" border="0" class="table">
+                    <thead>
+                        <tr>
+                            <td>播出频道</td>
+                            <td>时间</td>
+                            <td>节目</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>安徽卫视</td>
+                            <td>2016/11/10</td>
+                            <td>天气预报</td>
+                        </tr>
+                        <tr>
+                            <td>CCTV</td>
+                            <td>2016/11/10</td>
+                            <td>天气预报</td>
+                        </tr>
+                    </tbody>
+                </table> 
+            </div>
+            <div class="table-div" style="display: none;" tab-index="4">
+                <table cellpadding="0" cellspacing="0" border="0" class="table">
+                    <thead>
+                        <tr>
+                            <td>播出频道</td>
+                            <td>时间</td>
+                            <td>节目</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>安徽卫视</td>
+                            <td>2016/11/11</td>
+                            <td>天气预报</td>
+                        </tr>
+                        <tr>
+                            <td>CCTV</td>
+                            <td>2016/11/11</td>
+                            <td>天气预报</td>
+                        </tr>
+                    </tbody>
+                </table> 
+            </div>
+            <div class="table-div" style="display: none;" tab-index="5">
+                <table cellpadding="0" cellspacing="0" border="0" class="table">
+                    <thead>
+                        <tr>
+                            <td>播出频道</td>
+                            <td>时间</td>
+                            <td>节目</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>安徽卫视</td>
+                            <td>2016/11/12</td>
+                            <td>天气预报</td>
+                        </tr>
+                        <tr>
+                            <td>CCTV</td>
+                            <td>2016/11/12</td>
+                            <td>天气预报</td>
+                        </tr>
+                    </tbody>
+                </table> 
+            </div>
+            <div class="table-div" style="display: none;" tab-index="6">
+                <table cellpadding="0" cellspacing="0" border="0" class="table">
+                    <thead>
+                        <tr>
+                            <td>播出频道</td>
+                            <td>时间</td>
+                            <td>节目</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>安徽卫视</td>
+                            <td>2016/11/13</td>
+                            <td>天气预报</td>
+                        </tr>
+                        <tr>
+                            <td>CCTV</td>
+                            <td>2016/11/13</td>
+                            <td>天气预报</td>
+                        </tr>
+                    </tbody>
+                </table> 
+            </div>
+        </div>
+        
+        <!--require.js 解决的两个问题-->
+		<!--1. 实现js文件的异步加载，避免网页失去响应；
+　                    2. 管理模块之间的依赖性，便于代码的编写和维护
+        	data-main属性的作用是，指定网页程序的主模块。在上例中，就是js目录下面的main.js，这个文件会第一个被require.js加载。
+        	由于require.js默认的文件后缀名是js，所以可以把main.js简写成main
+        -->
+        <script src="js/require/require.js"  data-main= "js/main"></script>
+        
+       <!-- <script type="text/javascript" src="js/jquery-1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/component/switchTab-javaScript.js" ></script>-->
+    </body>
+</html>
