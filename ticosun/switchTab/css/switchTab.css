@@ -1,0 +1,131 @@
+/**
+ * Author Zhangjiangfeng
+ * Date 2016/11/9 PM 20:35 night
+ * 选项卡样式实现
+ */
+html {
+    font-family: "微软雅黑";
+    font-size: 12px;
+}
+div, ul, li, p, a {
+    margin: 0;
+    padding: 0;
+}
+.nav-tab {
+    width: 565px;
+    height: 54px;
+    background-color: #fafafa;
+    position: relative;
+    display: inline-block;
+}
+ul.main-tab {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 0; /*消除display: inline-block间隙*/
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: -2px;
+}
+ul.main-tab li {
+    display: inline-block;
+    height: 48px;
+    padding-top: 4px;
+    border-width: 2px 1px 0;
+    border-color: #999;
+    border-style: solid;
+    border-color: rgba(0,0,0,0);
+    _border-color:tomato;
+    _filter:chroma(color=#ff6347);
+}
+ul.main-tab li a {
+    display: inline-block;
+    height: 100%;
+    text-decoration: none;
+    color: #333;
+}
+
+ul.main-tab li p {
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0 20px;
+}
+/*利用边框的透明从而减少li盒子计算样式*/
+ul.main-tab li {
+    border-width: 2px 1px 0;
+    border-top-color: #19A6A6;
+    border-left-color: #d9d9d9;
+    border-right-color: #d9d9d9;
+    border-style: solid;
+    border-color: rgba(0,0,0,0);
+}
+/*    ul.main-tab li:hover {
+        border-width: 2px 1px 0;
+        border-top-color: #19A6A6;
+        border-left-color: #d9d9d9;
+        border-right-color: #d9d9d9;
+        border-bottom: #FFFFFF;
+        border-style: solid;
+        background-color: #FFFFFF;
+    }*/
+/*选项卡选中样式*/
+ul.main-tab li.active {
+    border-width: 2px 1px 0;
+    border-top-color: #19A6A6;
+    border-left-color: #d9d9d9;
+    border-right-color: #d9d9d9;
+    border-bottom: #FFFFFF;
+    border-style: solid;
+    background-color: #FFFFFF;
+}
+
+/*选项卡内容样式*/
+.tab-content {
+    width: 543px;
+    min-height: 250px;
+    border: 1px solid #d9d9d9;
+    border-top: none;
+    padding: 10px;
+    position: relative;
+}
+.table {
+    width: 100%;
+    display: table;
+    border-collapse: collapse;
+    border: 0;
+}
+.table tr td {
+    padding: 10px;
+    border-bottom: solid 1px #d9d9d9;
+}
+.table tr.last-no-border  td {
+    border-bottom: none;
+}
+.div-buttn {
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background-color: #fafafa;
+}
+.div-buttn i {
+    width: 14px;
+    height: 14px;
+    margin-left: 5px;
+    display: inline-block;    
+    vertical-align: text-bottom;
+    font-style: normal;
+}
+.div-buttn i.c-icon {
+    background: url(../img/icons.png) no-repeat 0 0;
+}
+.div-buttn i.c-icon-bottom {
+    background-position: -71px -168px;
+}
+.div-buttn i.c-icon-top {
+    background-position:-96px -168px
+}
+.close {
+    display: none;
+}
