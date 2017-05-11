@@ -1,7 +1,7 @@
 /**
  * 引入jQuery库 及 自定义功能模块实现Tab切换
- * Author: Avenstar
- * 2017/2/17
+ * Author: ticosun
+ * 2017/5/8
  */
 require.config({
 	baseUrl : './js/lib/',
